@@ -5,9 +5,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h1></h1>
+    <h1>Welcome!</h1>
     <input type="number" placeholder="PIN" id="input">
     <button onclick="enter()" id="button">Enter</button>
+    <h1 id="message"></h1>
 
     <style>
         input{font-size: 40px;width: 300px;}
@@ -20,9 +21,10 @@
         function enter(){
             if(document.getElementById('input').value=='1026'){
                 console.log('true')
-                //document.body.innerHTML = '<h1>Success</h1>'
+                document.getElementById('message').innerHTML='true'
             }else{
                 console.log('false')
+                document.getElementById('message').innerHTML='false'
             }
         }
     </script>
