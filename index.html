@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <input type="number" placeholder="PIN" id="input">
+    <button onclick="enter()">Enter</button>
+
+    <style>
+        input{font-size: 40px;width: 300px;}
+        button{font-size: 40px;}
+    </style>
+
+    <script>
+        document.addEventListener('keydown',(e)=>{if(e.code=='Enter')enter()})
+
+        function enter(){
+            if(document.getElementById('input').value=='1026'){
+                console.log('true')
+                //document.body.innerHTML = '<h1>Success</h1>'
+            }else{
+                console.log('false')
+            }
+        }
+    </script>
+</body>
+</html>
