@@ -16,17 +16,10 @@
     </style>
 
     <script>
-        var arr = ['0','1','2','3','4','5','6','7','8','9']
-        var K1 = arr[Math.floor(Math.random()*arr.length)]
-        var K2 = arr[Math.floor(Math.random()*arr.length)]
-        var K3 = arr[Math.floor(Math.random()*arr.length)]
-        var K4 = arr[Math.floor(Math.random()*arr.length)]
-        var NUM = K1+K2+K3+K4;
-
         document.addEventListener('keydown',(e)=>{if(e.code=='Enter')enter()})
 
         function enter(){
-            if(document.getElementById('input').value==NUM){
+            if(document.getElementById('input').value=='8645'){
                 document.getElementById('message').innerHTML='true'
             }else{
                 document.getElementById('message').innerHTML='false'
